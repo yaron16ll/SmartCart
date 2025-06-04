@@ -1,0 +1,114 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.smartcart.views.activities.OrderActivity">
+
+    <data>
+        <variable
+            name="order"
+            type="com.example.smartcart.models.Order" />
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/order_back"
+       >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="250dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+
+            <Spinner
+                android:id="@+id/citylist"
+                android:layout_width="359dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:id="@+id/citylistErrorMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please select a country"
+                android:textColor="#FF1744"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/street"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:hint="Ship Street Name"
+                android:inputType="text"
+                 />
+
+            <TextView
+                android:id="@+id/streetErrorMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please enter valid street name"
+                android:textColor="#FF1744"
+                android:textSize="12sp"
+                android:visibility="invisible" />
+
+
+            <EditText
+                android:id="@+id/dateEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:focusable="false"
+                android:hint="Choose a date" />
+
+
+            <EditText
+                android:id="@+id/cardCredit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Credit No."
+                android:digits="0123456789 "
+                android:inputType="number"
+                android:layout_marginTop="36dp"
+                android:maxLength="19"
+                  />
+
+            <TextView
+                android:id="@+id/cardCreditErrorMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Write in format #### #### #### ####
+"
+                android:textColor="#FF1744"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/order_button"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="55dp"
+                android:backgroundTint="#212121"
+                android:enabled="false"
+                android:padding="12dp"
+                android:text="Order"
+                android:textColor="@color/white" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

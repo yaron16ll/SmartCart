@@ -1,227 +1,75 @@
 <resources>
-    <string name="app_name">TasteBase</string>
-
-    <string-array name="countrylist">
-        <item>Select a country</item> <!-- Hint item -->
-        <item>Afghanistan</item>
-        <item>Albania</item>
-        <item>Algeria</item>
-        <item>Andorra</item>
-        <item>Angola</item>
-        <item>Antigua and Barbuda</item>
-        <item>Argentina</item>
-        <item>Armenia</item>
-        <item>Australia</item>
-        <item>Austria</item>
-        <item>Azerbaijan</item>
-        <item>Bahamas</item>
-        <item>Bahrain</item>
-        <item>Bangladesh</item>
-        <item>Barbados</item>
-        <item>Belarus</item>
-        <item>Belgium</item>
-        <item>Belize</item>
-        <item>Benin</item>
-        <item>Bhutan</item>
-        <item>Bolivia</item>
-        <item>Bosnia and Herzegovina</item>
-        <item>Botswana</item>
-        <item>Brazil</item>
-        <item>Brunei</item>
-        <item>Bulgaria</item>
-        <item>Burkina Faso</item>
-        <item>Burundi</item>
-        <item>Cabo Verde</item>
-        <item>Cambodia</item>
-        <item>Cameroon</item>
-        <item>Canada</item>
-        <item>Central African Republic</item>
-        <item>Chad</item>
-        <item>Chile</item>
-        <item>China</item>
-        <item>Colombia</item>
-        <item>Comoros</item>
-        <item>Congo (Congo-Brazzaville)</item>
-        <item>Costa Rica</item>
-        <item>Croatia</item>
-        <item>Cuba</item>
-        <item>Cyprus</item>
-        <item>Czechia (Czech Republic)</item>
-        <item>Denmark</item>
-        <item>Djibouti</item>
-        <item>Dominica</item>
-        <item>Dominican Republic</item>
-        <item>Ecuador</item>
-        <item>Egypt</item>
-        <item>El Salvador</item>
-        <item>Equatorial Guinea</item>
-        <item>Eritrea</item>
-        <item>Estonia</item>
-        <item>Eswatini (fmr. "Swaziland")</item>
-        <item>Ethiopia</item>
-        <item>Fiji</item>
-        <item>Finland</item>
-        <item>France</item>
-        <item>Gabon</item>
-        <item>Gambia</item>
-        <item>Georgia</item>
-        <item>Germany</item>
-        <item>Ghana</item>
-        <item>Greece</item>
-        <item>Grenada</item>
-        <item>Guatemala</item>
-        <item>Guinea</item>
-        <item>Guinea-Bissau</item>
-        <item>Guyana</item>
-        <item>Haiti</item>
-        <item>Honduras</item>
-        <item>Hungary</item>
-        <item>Iceland</item>
-        <item>India</item>
-        <item>Indonesia</item>
-        <item>Iran</item>
-        <item>Iraq</item>
-        <item>Ireland</item>
-        <item>Israel</item>
-        <item>Italy</item>
-        <item>Jamaica</item>
-        <item>Japan</item>
-        <item>Jordan</item>
-        <item>Kazakhstan</item>
-        <item>Kenya</item>
-        <item>Kiribati</item>
-        <item>Kuwait</item>
-        <item>Kyrgyzstan</item>
-        <item>Laos</item>
-        <item>Latvia</item>
-        <item>Lebanon</item>
-        <item>Lesotho</item>
-        <item>Liberia</item>
-        <item>Libya</item>
-        <item>Liechtenstein</item>
-        <item>Lithuania</item>
-        <item>Luxembourg</item>
-        <item>Madagascar</item>
-        <item>Malawi</item>
-        <item>Malaysia</item>
-        <item>Maldives</item>
-        <item>Mali</item>
-        <item>Malta</item>
-        <item>Marshall Islands</item>
-        <item>Mauritania</item>
-        <item>Mauritius</item>
-        <item>Mexico</item>
-        <item>Micronesia</item>
-        <item>Moldova</item>
-        <item>Monaco</item>
-        <item>Mongolia</item>
-        <item>Montenegro</item>
-        <item>Morocco</item>
-        <item>Mozambique</item>
-        <item>Myanmar (formerly Burma)</item>
-        <item>Namibia</item>
-        <item>Nauru</item>
-        <item>Nepal</item>
-        <item>Netherlands</item>
-        <item>New Zealand</item>
-        <item>Nicaragua</item>
-        <item>Niger</item>
-        <item>Nigeria</item>
-        <item>North Korea</item>
-        <item>North Macedonia</item>
-        <item>Norway</item>
-        <item>Oman</item>
-        <item>Pakistan</item>
-        <item>Palau</item>
-        <item>Palestine State</item>
-        <item>Panama</item>
-        <item>Papua New Guinea</item>
-        <item>Paraguay</item>
-        <item>Peru</item>
-        <item>Philippines</item>
-        <item>Poland</item>
-        <item>Portugal</item>
-        <item>Qatar</item>
-        <item>Romania</item>
-        <item>Russia</item>
-        <item>Rwanda</item>
-        <item>Saint Kitts and Nevis</item>
-        <item>Saint Lucia</item>
-        <item>Saint Vincent and the Grenadines</item>
-        <item>Samoa</item>
-        <item>San Marino</item>
-        <item>Sao Tome and Principe</item>
-        <item>Saudi Arabia</item>
-        <item>Senegal</item>
-        <item>Serbia</item>
-        <item>Seychelles</item>
-        <item>Sierra Leone</item>
-        <item>Singapore</item>
-        <item>Slovakia</item>
-        <item>Slovenia</item>
-        <item>Solomon Islands</item>
-        <item>Somalia</item>
-        <item>South Africa</item>
-        <item>South Korea</item>
-        <item>South Sudan</item>
-        <item>Spain</item>
-        <item>Sri Lanka</item>
-        <item>Sudan</item>
-        <item>Suriname</item>
-        <item>Sweden</item>
-        <item>Switzerland</item>
-        <item>Syria</item>
-        <item>Tajikistan</item>
-        <item>Tanzania</item>
-        <item>Thailand</item>
-        <item>Timor-Leste</item>
-        <item>Togo</item>
-        <item>Tonga</item>
-        <item>Trinidad and Tobago</item>
-        <item>Tunisia</item>
-        <item>Turkey</item>
-        <item>Turkmenistan</item>
-        <item>Tuvalu</item>
-        <item>Uganda</item>
-        <item>Ukraine</item>
-        <item>United Arab Emirates</item>
-        <item>United Kingdom</item>
-        <item>United States of America</item>
-        <item>Uruguay</item>
-        <item>Uzbekistan</item>
-        <item>Vanuatu</item>
-        <item>Vatican City (Holy See)</item>
-        <item>Venezuela</item>
-        <item>Vietnam</item>
-        <item>Yemen</item>
-        <item>Zambia</item>
-        <item>Zimbabwe</item>
+    <string name="app_name">SmartCart</string>
+    <string-array name="citylist">
+        <item>Select a city</item> <!-- Hint item -->
+        <item>Umm al-Fahm</item>
+        <item>Eilat</item>
+        <item>Ariel</item>
+        <item>Ashdod</item>
+        <item>Ashkelon</item>
+        <item>Baqa al-Gharbiyye</item>
+        <item>Beit Shean</item>
+        <item>Beit Shemesh</item>
+        <item>Bnei Brak</item>
+        <item>Bat Yam</item>
+        <item>Givat Shmuel</item>
+        <item>Givatayim</item>
+        <item>Dimona</item>
+        <item>Hod HaSharon</item>
+        <item>Herzliya</item>
+        <item>Hadera</item>
+        <item>Haifa</item>
+        <item>Harish</item>
+        <item>Tiberias</item>
+        <item>Tayibe</item>
+        <item>Tira</item>
+        <item>Tirat Carmel</item>
+        <item>Yavne</item>
+        <item>Yehud-Monosson</item>
+        <item>Yokneam Illit</item>
+        <item>Yeruham</item>
+        <item>Jerusalem</item>
+        <item>Kfar Saba</item>
+        <item>Kfar Yona</item>
+        <item>Kafr Qasim</item>
+        <item>Karmiel</item>
+        <item>Lod</item>
+        <item>Migdal HaEmek</item>
+        <item>Modiin-Maccabim-Reut</item>
+        <item>Modiin Illit</item>
+        <item>Maale Adumim</item>
+        <item>Maalot-Tarshiha</item>
+        <item>Nahariya</item>
+        <item>Nof HaGalil</item>
+        <item>Nazareth</item>
+        <item>Nesher</item>
+        <item>Netivot</item>
+        <item>Netanya</item>
+        <item>Sakhnin</item>
+        <item>Acre</item>
+        <item>Afula</item>
+        <item>Arad</item>
+        <item>Petah Tikva</item>
+        <item>Safed</item>
+        <item>Qalansawe</item>
+        <item>Katzrin</item>
+        <item>Kiryat Ono</item>
+        <item>Kiryat Ata</item>
+        <item>Kiryat Bialik</item>
+        <item>Kiryat Gat</item>
+        <item>Kiryat Yam</item>
+        <item>Kiryat Motzkin</item>
+        <item>Kiryat Malakhi</item>
+        <item>Kiryat Shmona</item>
+        <item>Rosh HaAyin</item>
+        <item>Rishon LeZion</item>
+        <item>Rahat</item>
+        <item>Ramla</item>
+        <item>Ramat Gan</item>
+        <item>Ramat HaSharon</item>
+        <item>Raanana</item>
+        <item>Sderot</item>
+        <item>Shefa-Amr</item>
+        <item>Tel Aviv-Yafo</item>
     </string-array>
-
-    <string-array name="food_categories">
-        <item>Select a category</item>
-        <item>Breakfast</item>
-        <item>Lunch</item>
-        <item>Dinner</item>
-        <item>Desserts</item>
-        <item>Salads</item>
-        <item>Soups</item>
-        <item>Vegetarian</item>
-        <item>Vegan</item>
-        <item>Seafood</item>
-        <item>Poultry</item>
-        <item>Beef</item>
-        <item>Pasta</item>
-        <item>Healthy</item>
-        <item>Gluten-Free</item>
-    </string-array>
-
-
-    <string-array name="recipe_level">
-        <item>Select a level</item>
-        <item>Easy</item>
-        <item>Medium</item>
-        <item>Hard</item>
-    </string-array>
-
 </resources>

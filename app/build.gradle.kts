@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.tastebase"
+    namespace = "com.example.smartcart"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.tastebase"
+        applicationId = "com.example.smartcart"
         minSdk = 26
         targetSdk = 34
         versionCode = 1
@@ -40,6 +40,7 @@ dependencies {
     implementation(libs.material.v14)
     implementation (libs.gson)
     implementation (libs.glide)
+    implementation(libs.protolite.well.known.types)
     annotationProcessor (libs.compiler)
     implementation (libs.picasso)
 
@@ -55,6 +56,8 @@ dependencies {
     androidTestImplementation(libs.ext.junit)
     implementation(libs.material.v190)
     androidTestImplementation(libs.espresso.core)
+    implementation(libs.google.flexbox )
+
 
     implementation (libs.lifecycle.extensions) // For ViewModel and LiveData
 

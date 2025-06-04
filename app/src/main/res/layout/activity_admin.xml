@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".views.activities.AdminActivity">
+
+    <LinearLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_nav"
+        android:background="@drawable/admin_background"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:layout_margin="100dp"
+            android:src="@drawable/manager" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <!-- Add Product -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="40dp"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/addProductBtn"
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:src="@drawable/add_product" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Product"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#5e64ff"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Add Category -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="40dp"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/addCategoryBtn"
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:src="@drawable/add_category" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Category"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#5e64ff"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back_login_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+             android:src="@drawable/admin_homepage_btn" />
+    </LinearLayout>
+
+</RelativeLayout>

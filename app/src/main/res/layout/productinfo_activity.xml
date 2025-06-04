@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.example.smartcart.views.activities.productInfoActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="20dp"
+                android:text="Tomato Pasta"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/product_img"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/upload_image" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="60dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/sugar_sticker" />
+
+                        <ImageView
+                            android:id="@+id/first_check"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="10dp"
+                            android:src="@drawable/red_x" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="60dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/fat_sticker" />
+
+                        <ImageView
+                            android:id="@+id/second_check"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="10dp"
+                            android:src="@drawable/check_green" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="60dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/green_sticker" />
+
+                        <ImageView
+                            android:id="@+id/third_check"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="10dp"
+                            android:src="@drawable/check_green" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="150dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/info" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="Description"
+                        android:textColor="@color/black"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/product_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="16dp"
+                        android:lineSpacingExtra="15dp"
+                        android:padding="16dp"
+                        android:text="1. Boil a pot of water with a pinch of salt.\n2. Add the pasta and cook according to the package instructions until al dente.\n3. Drain and set aside.\n4. Heat olive oil in a pan over medium heat.\n5. Add chopped onion and cook until translucent.\n6. Add minced garlic and sauté for about 1 minute.\n7. Stir in the canned or fresh tomatoes.\n8. Season with salt and pepper.\n9. Let the sauce simmer for 10-15 minutes, stirring occasionally.\n10. Add the cooked pasta to the sauce and mix well.\n11. Garnish with fresh basil leaves and grated Parmesan cheese, if desired.\n12. Serve hot and enjoy!"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

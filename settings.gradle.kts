@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "TasteBase"
+rootProject.name = "SmartCart"
 include(":app")
  

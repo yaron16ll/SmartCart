@@ -1,28 +1,29 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="views.activities.LoginActivity">
+    tools:context="com.example.smartcart.views.activities.LoginActivity">
 
     <data>
         <variable
             name="user"
-            type="com.example.tastebase.models.User" />
+            type="com.example.smartcart.models.User" />
     </data>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/main_background">
+        android:background="@drawable/login">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="70dp"
             android:padding="50dp"
             android:text="Login"
             android:textColor="@color/white"
-            android:textSize="100sp"
+            android:textSize="60sp"
             android:textStyle="bold" />
 
         <LinearLayout
@@ -79,10 +80,19 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="55dp"
                 android:backgroundTint="#212121"
-                android:padding="12dp"
-                android:textColor="@color/white"
                 android:enabled="false"
-                android:text="Login" />
+                android:padding="12dp"
+                android:text="Login"
+                android:textColor="@color/white" />
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -90,20 +100,23 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:gravity="center"
+            android:orientation="horizontal"
             android:padding="16dp">
 
             <TextView
                 android:id="@+id/textView1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingEnd="16dp"
+                android:layout_marginStart="60dp"
+                android:layout_weight="1"
                 android:text="Don't have an account?"
                 android:textSize="18sp" />
 
             <TextView
-                android:id="@+id/signup"
+                android:id="@+id/signupTextview"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_weight="8"
                 android:text="Sign up"
                 android:textColor="#3D5AFE"
                 android:textSize="18sp" />
