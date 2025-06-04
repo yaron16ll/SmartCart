@@ -17,7 +17,7 @@ import com.example.smartcart.R;
 import com.example.smartcart.controllers.SignUpController;
 import com.example.smartcart.databinding.FirstSignUpActivityBinding;
 import com.example.smartcart.models.User;
-import com.example.smartcart.utilities.UserViewModel;
+import com.example.smartcart.utilities.viewmodels.UserViewModel;
 import com.google.gson.Gson;
 
 import java.util.ArrayList;

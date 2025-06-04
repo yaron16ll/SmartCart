@@ -19,7 +19,7 @@ import com.example.smartcart.R;
 import com.example.smartcart.controllers.LoginController;
 import com.example.smartcart.databinding.LoginActivityBinding;
 import com.example.smartcart.models.User;
-import com.example.smartcart.utilities.UserViewModel;
+import com.example.smartcart.utilities.viewmodels.UserViewModel;
 
 import java.util.ArrayList;
 

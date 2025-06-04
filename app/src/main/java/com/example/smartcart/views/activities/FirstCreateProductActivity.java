@@ -1,12 +1,10 @@
 package com.example.smartcart.views.activities;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -17,13 +15,10 @@ import androidx.databinding.DataBindingUtil;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.smartcart.R;
-import com.example.smartcart.models.Category;
 import com.example.smartcart.models.Product;
 import com.example.smartcart.controllers.CreateProductController;
-import com.example.smartcart.utilities.ProductViewModel;
+import com.example.smartcart.utilities.viewmodels.ProductViewModel;
 import com.google.gson.Gson;
-
-import java.util.ArrayList;
 
 public class FirstCreateProductActivity extends AppCompatActivity {
     private Product product;

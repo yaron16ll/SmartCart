@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -15,11 +14,9 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.smartcart.R;
 import com.example.smartcart.controllers.CreateCategoryController;
-import com.example.smartcart.controllers.CreateProductController;
 import com.example.smartcart.databinding.CreateCategoryActivityBinding;
 import com.example.smartcart.models.Category;
-import com.example.smartcart.utilities.CategoryViewModel;
-import com.google.gson.Gson;
+import com.example.smartcart.utilities.viewmodels.CategoryViewModel;
 
 public class CreateCategoryActivity extends AppCompatActivity {
     private Category category;

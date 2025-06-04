@@ -17,13 +17,13 @@ import com.example.smartcart.utilities.interfaces.CallbackCartItem;
 
 import java.util.ArrayList;
 
-public class ShoppingCartAdapter extends RecyclerView.Adapter<ShoppingCartAdapter.CartItemViewHolder> {
+public class CartItemsAdapter extends RecyclerView.Adapter<CartItemsAdapter.CartItemViewHolder> {
 
     private ArrayList<CartItem> cartItems;
     private CallbackCartItem listener;
     private Context context;
 
-    public ShoppingCartAdapter(ArrayList<CartItem> cartItems, CallbackCartItem listener, Context context) {
+    public CartItemsAdapter(ArrayList<CartItem> cartItems, CallbackCartItem listener, Context context) {
         this.cartItems = cartItems;
         this.listener = listener;
         this.context = context;

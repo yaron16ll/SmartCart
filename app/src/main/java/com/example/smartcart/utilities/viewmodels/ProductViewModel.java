@@ -1,4 +1,4 @@
-package com.example.smartcart.utilities;
+package com.example.smartcart.utilities.viewmodels;
 
 import androidx.lifecycle.ViewModel;
 
