@@ -35,6 +35,7 @@ The last component is a **collaborative filtering**- based recommendation system
 ![צילום מסך 2025-06-04 203655](https://github.com/user-attachments/assets/faad7ab2-d045-48d0-9ba7-b9d03aa194e5)
 ![צילום מסך 2025-06-04 203725](https://github.com/user-attachments/assets/93f3b5fb-43ad-4617-b995-164d0d71540d)
 ![צילום מסך 2025-06-04 204620](https://github.com/user-attachments/assets/7719f309-6c98-4f68-b331-31359d735021)
-![צילום מסך 2025-06-04 211105](https://github.com/user-attachments/assets/6e267daf-1dfe-4d9a-b6f1-79771966527d)
+<img src="![צילום מסך 2025-06-04 211105](https://github.com/user-attachments/assets/9f33d478-ba53-4111-b6b3-dae60f91bd82)
+" width="300" height="200" />
 
  
