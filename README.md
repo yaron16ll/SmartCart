@@ -37,4 +37,12 @@ The last component is a **collaborative filtering**- based recommendation system
 ![צילום מסך 2025-06-04 204620](https://github.com/user-attachments/assets/7719f309-6c98-4f68-b331-31359d735021)
 <img src="https://github.com/user-attachments/assets/9f33d478-ba53-4111-b6b3-dae60f91bd82" width="400" height="750" />
 
- 
+# Admin Screen
+
+ ![צילום מסך 2025-06-04 204955](https://github.com/user-attachments/assets/cac97197-6ad3-4c36-995a-7fdf5b18e98f)
+
+## Create Product Screen
+![צילום מסך 2025-06-04 205026](https://github.com/user-attachments/assets/6efaf959-844e-42d4-82be-e0bf69985b7a)
+![צילום מסך 2025-06-04 205133](https://github.com/user-attachments/assets/7f166ed4-b1b2-48c0-b54f-e483c5f2dc0c)
+## Create Category Screen
+![צילום מסך 2025-06-04 205252](https://github.com/user-attachments/assets/6060ebf3-143f-40f8-aedb-911f297144f9)
