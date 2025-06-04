@@ -37,7 +37,7 @@ The last component is a **collaborative filtering**- based recommendation system
 ![צילום מסך 2025-06-04 204620](https://github.com/user-attachments/assets/7719f309-6c98-4f68-b331-31359d735021)
 <img src="https://github.com/user-attachments/assets/9f33d478-ba53-4111-b6b3-dae60f91bd82" width="400" height="750" />
 
-# Admin Screen
+# Admin Panel
 
  ![צילום מסך 2025-06-04 204955](https://github.com/user-attachments/assets/cac97197-6ad3-4c36-995a-7fdf5b18e98f)
 
