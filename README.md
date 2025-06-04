@@ -1,4 +1,4 @@
-**SmartCart** is a mobile application for buying and selling grocery products,
+**SmartCart** is a mobile application for buying and selling grocery products.
 
 Perfect for those who love shopping.
 
@@ -6,6 +6,9 @@ The Android-based application has a frontend on **Android Studio** and a backend
 
 
 The backend includes components like the **Firebase real-time database** for storing and manipulating data, and **Firebase Storage** for storing images.
+
+
+
 
 
 
