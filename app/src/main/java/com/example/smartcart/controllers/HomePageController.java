@@ -7,7 +7,6 @@ import com.example.smartcart.models.CartItem;
 import com.example.smartcart.models.ShoppingCart;
 import com.example.smartcart.models.TempMemoryCache;
 import com.example.smartcart.utilities.interfaces.AddCartItemToDB;
-import com.example.smartcart.utilities.interfaces.UpdateCartItemToDB;
 import com.google.android.flexbox.AlignItems;
 import com.google.android.flexbox.FlexboxLayoutManager;
 import com.google.android.flexbox.FlexWrap;
@@ -179,6 +178,50 @@ public class HomePageController {
     }
 
     public void addCartItemToDB(Product product, final AddCartItemToDB callback) {
+        if (isProductExistOnCache(product)) {
+            updateCartItem(product, callback);
+        } else {
+            addCartItem(product, callback);
+        }
+    }
+
+    private void updateCartItem(Product product, AddCartItemToDB callback) {
+        CartItem cartItem = getCombinedCartItems(product);
+
+
+       updateCartItemToDB(cartItem, aVoid -> {
+            cacheCartItem(cartItem);
+            callback.onSuccess(cartItem);
+        }, e -> {
+            callback.onFailure(String.valueOf(e));
+
+        });
+
+    }
+
+    private CartItem getCombinedCartItems(Product product) {
+        ArrayList<CartItem> cartItems;
+
+        String cartItemID = cartItemsRef.push().getKey();
+        String shoppingCartID = getShoppingCartID();
+        CartItem newCartItem = new CartItem().setId(cartItemID).setProductID(product.getId()).setShoppingCartID(shoppingCartID).setTotalPrice(product.getAmount() * product.getPrice()).setAmount(product.getAmount()).setName(product.getName()).setImageSrc(product.getImageResId());
+
+        String cartItemsString = TempMemoryCache.getInstance().getString("cartItems", null);
+        Type type = new TypeToken<ArrayList<CartItem>>() {
+        }.getType();
+        cartItems = new Gson().fromJson(cartItemsString, type);
+
+        for (CartItem cartItem : cartItems) {
+            if (cartItem.getName().equals(product.getName())) {
+                CartItem c = new CartItem().setTotalPrice(getCombinedTotalPrice(cartItem, newCartItem)).setAmount(getCombinedAmount(cartItem, newCartItem)).setName(cartItem.getName())
+                        .setImageSrc(cartItem.getImageSrc()).setShoppingCartID(getShoppingCartID()).setProductID(cartItem.getProductID()).setId(cartItem.getId());
+                return c;
+            }
+        }
+        return null;
+    }
+
+    private void addCartItem(Product product, final AddCartItemToDB callback) {
         String cartItemID = cartItemsRef.push().getKey();
         String shoppingCartID = getShoppingCartID();
         CartItem cartItem = new CartItem().setId(cartItemID).setProductID(product.getId()).setShoppingCartID(shoppingCartID).setTotalPrice(product.getAmount() * product.getPrice()).setAmount(product.getAmount()).setName(product.getName()).setImageSrc(product.getImageResId());
@@ -190,6 +233,26 @@ public class HomePageController {
             callback.onFailure(String.valueOf(e));
 
         });
+    }
+
+    private boolean isProductExistOnCache(Product product) {
+        ArrayList<CartItem> cartItems;
+
+        String cartItemsString = TempMemoryCache.getInstance().getString("cartItems", null);
+        if (cartItemsString == null){
+            return  false;
+        }
+
+        Type type = new TypeToken<ArrayList<CartItem>>() {
+        }.getType();
+        cartItems = new Gson().fromJson(cartItemsString, type);
+
+        for (CartItem cartItem : cartItems) {
+            if (cartItem.getName().equals(product.getName())) {
+                return true;
+            }
+        }
+        return false;
     }
 
     public void deleteCartItems() {
@@ -204,7 +267,8 @@ public class HomePageController {
             }
 
             @Override
-            public void onCancelled(@NonNull DatabaseError error) {}
+            public void onCancelled(@NonNull DatabaseError error) {
+            }
         });
     }
 
@@ -216,11 +280,23 @@ public class HomePageController {
     }
 
     public void addCartItemToDB(CartItem cartItem, OnSuccessListener<Void> onSuccessListener, OnFailureListener onFailureListener) {
-
         cartItemsRef.child(cartItem.getId())
                 .setValue(cartItem)
                 .addOnSuccessListener(aVoid -> {
                     cartItemsRef.child(cartItem.getId()).onDisconnect().removeValue();
+                    onSuccessListener.onSuccess(aVoid);
+                })
+                .addOnFailureListener(onFailureListener);
+    }
+
+    public void updateCartItemToDB(CartItem cartItem, OnSuccessListener<Void> onSuccessListener, OnFailureListener onFailureListener) {
+        Map<String, Object> updates = new HashMap<>();
+        updates.put("totalPrice", cartItem.getTotalPrice());
+        updates.put("amount", cartItem.getAmount());
+
+        cartItemsRef.child(cartItem.getId())
+                .updateChildren(updates)
+                .addOnSuccessListener(aVoid -> {
                     onSuccessListener.onSuccess(aVoid);
                 })
                 .addOnFailureListener(onFailureListener);
@@ -253,9 +329,8 @@ public class HomePageController {
 
         for (CartItem cartItem : cartItems) {
             if (cartItem.getName().equals(newCartItem.getName())) {
-                CartItem c = new CartItem().setTotalPrice(getCombinedTotalPrice(cartItem, newCartItem)).setAmount(getCombinedAmount(cartItem, newCartItem)).setName(newCartItem.getName()).setImageSrc(newCartItem.getImageSrc());
-                newCartItems = deleteExistItem(cartItems, newCartItem);
-                newCartItems.add(c);
+                newCartItems = deleteExistItem(cartItems, cartItem);
+                newCartItems.add(newCartItem);
                 return newCartItems;
             }
         }
@@ -264,12 +339,15 @@ public class HomePageController {
     }
 
     private ArrayList<CartItem> deleteExistItem(ArrayList<CartItem> cartItems, CartItem c) {
+        ArrayList<CartItem> newCartItems = new ArrayList<>();
+
         for (CartItem cartItem : cartItems) {
             if (cartItem.getName().equals(c.getName())) {
-                cartItems.remove(cartItem);
+                continue;
             }
+            newCartItems.add(cartItem);
         }
-        return cartItems;
+        return newCartItems;
     }
 
 

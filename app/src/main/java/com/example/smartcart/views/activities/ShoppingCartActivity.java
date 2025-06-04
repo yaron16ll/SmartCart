@@ -33,7 +33,7 @@ public class ShoppingCartActivity extends AppCompatActivity implements CallbackC
     private RecyclerView cartItemsRecyclerView;
     private ArrayList<CartItem> cartItems;
     private TextInputEditText cartItemSearch;
-    private CartItemAdapter shoppingCartAdapter;
+    private CartItemAdapter cartItemAdapter;
 
     private ImageView emptyCartItemsImg, backBtn, orderbtn;
     private ShoppingCartController shoppingCartController;
@@ -106,8 +106,8 @@ public class ShoppingCartActivity extends AppCompatActivity implements CallbackC
 
     private void initItemsRecyclerView() {
         // Set up RecyclerView
-        shoppingCartAdapter = new CartItemAdapter(cartItems, this, this);
-        shoppingCartController.setupCartItemsRecyclerView(shoppingCartAdapter, cartItemsRecyclerView);
+        cartItemAdapter = new CartItemAdapter(cartItems, this, this);
+        shoppingCartController.setupCartItemsRecyclerView(cartItemAdapter, cartItemsRecyclerView);
     }
 
     private ArrayList<CartItem> getCachedItems() {
@@ -168,7 +168,7 @@ public class ShoppingCartActivity extends AppCompatActivity implements CallbackC
     }
 
     public void updateDisplayedItems(ArrayList<CartItem> cartItems) {
-        shoppingCartAdapter.updateShoppingCart(cartItems);
+        cartItemAdapter.updateShoppingCart(cartItems);
     }
 
     private void showToast(String message) {
@@ -195,7 +195,7 @@ public class ShoppingCartActivity extends AppCompatActivity implements CallbackC
     }
 
     private void showEmptyCartIcon() {
-        if (shoppingCartAdapter.isShoppingCartEmpty()) {
+        if (cartItemAdapter.isShoppingCartEmpty()) {
             emptyCartItemsImg.setVisibility(View.VISIBLE);
         } else {
             emptyCartItemsImg.setVisibility(View.GONE);

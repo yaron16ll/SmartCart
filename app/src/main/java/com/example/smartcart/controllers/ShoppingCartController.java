@@ -54,8 +54,6 @@ public class ShoppingCartController {
 
     public void deleteCartItem(CartItem cartItem, final DeleteCartItemFromDB callback) {
         DatabaseReference itemRef = cartItemsRef.child(cartItem.getId());
-        itemRef.onDisconnect().cancel();
-
         deleteCartItemFromDB(cartItem, aVoid -> {
             deleteCartItemFromCache(cartItem);
             callback.onSuccess(cartItem);
