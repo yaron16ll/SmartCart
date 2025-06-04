@@ -17,7 +17,7 @@ import com.example.smartcart.controllers.ShoppingCartController;
 import com.example.smartcart.models.CartItem;
 import com.example.smartcart.models.ShoppingCart;
 import com.example.smartcart.models.TempMemoryCache;
-import com.example.smartcart.utilities.adapters.CartItemsAdapter;
+import com.example.smartcart.utilities.adapters.CartItemAdapter;
 import com.example.smartcart.R;
 import com.example.smartcart.utilities.interfaces.CallbackCartItem;
 import com.example.smartcart.utilities.interfaces.DeleteCartItemFromDB;
@@ -33,7 +33,7 @@ public class ShoppingCartActivity extends AppCompatActivity implements CallbackC
     private RecyclerView cartItemsRecyclerView;
     private ArrayList<CartItem> cartItems;
     private TextInputEditText cartItemSearch;
-    private CartItemsAdapter shoppingCartAdapter;
+    private CartItemAdapter shoppingCartAdapter;
 
     private ImageView emptyCartItemsImg, backBtn, orderbtn;
     private ShoppingCartController shoppingCartController;
@@ -106,7 +106,7 @@ public class ShoppingCartActivity extends AppCompatActivity implements CallbackC
 
     private void initItemsRecyclerView() {
         // Set up RecyclerView
-        shoppingCartAdapter = new CartItemsAdapter(cartItems, this, this);
+        shoppingCartAdapter = new CartItemAdapter(cartItems, this, this);
         shoppingCartController.setupCartItemsRecyclerView(shoppingCartAdapter, cartItemsRecyclerView);
     }
 

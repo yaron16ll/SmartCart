@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.smartcart.models.CartItem;
 import com.example.smartcart.models.TempMemoryCache;
-import com.example.smartcart.utilities.adapters.CartItemsAdapter;
+import com.example.smartcart.utilities.adapters.CartItemAdapter;
 import com.example.smartcart.utilities.interfaces.DeleteCartItemFromDB;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -22,7 +22,7 @@ import java.util.ArrayList;
 public class ShoppingCartController {
 
     private Context context;
-    private CartItemsAdapter cartItemAdapter;
+    private CartItemAdapter cartItemAdapter;
     private DatabaseReference cartItemsRef;
 
 
@@ -32,7 +32,7 @@ public class ShoppingCartController {
     }
 
 
-    public void setupCartItemsRecyclerView(CartItemsAdapter cartItemAdapter, RecyclerView recyclerView) {
+    public void setupCartItemsRecyclerView(CartItemAdapter cartItemAdapter, RecyclerView recyclerView) {
         this.cartItemAdapter = cartItemAdapter;
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(context);
