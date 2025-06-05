@@ -57,5 +57,11 @@ Import the project from GitHub from this repository.
 
 ### Demo video
 
-https://github.com/user-attachments/assets/c2fe625e-ff08-4419-8813-ae887eb78c3d
+
+https://github.com/user-attachments/assets/cb6087ca-6d1e-4711-aa1d-55fa1090937f
+
+
+https://github.com/user-attachments/assets/90bc8c77-1ef7-41ea-bd37-8d85068f309f
+
+
 
