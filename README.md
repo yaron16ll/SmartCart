@@ -54,3 +54,8 @@ After the project is created, proceed to create an emulator. From the top menu, 
 
 Now, you can launch the emulator from the Device Manager by clicking the Run button next to Pixel 8 Pro API 34. 
 Import the project from GitHub from this repository.
+
+### Demo video
+
+https://github.com/user-attachments/assets/c2fe625e-ff08-4419-8813-ae887eb78c3d
+
