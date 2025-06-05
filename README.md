@@ -39,7 +39,8 @@ The shopping cart screen shows my items, including a deletion option.
 ## Order Screen
 The order screen includes a form for sending the order.
 
-![צילום מסך 2025-06-04 205026](https://github.com/user-attachments/assets/6e6da1ff-58f4-48d5-8052-9a029d42a8b4)
+![צילום מסך 2025-06-04 203610](https://github.com/user-attachments/assets/1b178dc1-5b6a-41e9-bb19-4605523d4253)
+
 
 ## Receipt Sharing Screen
 Receipt sharing screen for users who want to share their receipt.
