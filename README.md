@@ -53,3 +53,4 @@ To start working with Android Studio, download the software from the official An
 After the project is created, proceed to create an emulator. From the top menu, go to Tools > Device Manager, and in the window that opens, click on + Create Device. In the list of devices, select Phone > Pixel 8 Pro, then click Next. In the next step, you’ll be asked to choose the system image — select Android 14.0 (API 34), whose codename is UpsideDownCake. If that version is not yet installed, click Download to install it, wait for the installation to complete, then click Next. Click Finish to create the emulator.
 
 Now, you can launch the emulator from the Device Manager by clicking the Run button next to Pixel 8 Pro API 34. 
+Import the project from GitHub from this repository.
