@@ -32,8 +32,10 @@ A 2-sign-up screen for users who want to register
 The homepage screen shows many categories and products, including search engines.
 
 ![צילום מסך 2025-06-04 203309](https://github.com/user-attachments/assets/ce347c42-a0f1-45f4-8949-b35fee18bbf8)
+## Shopping Cart Screen
+The Shopping Cart screen shows my items, includeing a deletion option.
 
-
+![צילום מסך 2025-06-04 203533](https://github.com/user-attachments/assets/da80c395-546a-48f5-aff8-78a79af00ec3)
 ## Order Screen
 The order screen includes a form for sending the order.
 
