@@ -18,6 +18,7 @@ The last component is a **collaborative filtering**- based recommendation system
 
 ## Login Screen
 A login screen with password and username fields for the users
+
 ![צילום מסך 2025-06-04 202908](https://github.com/user-attachments/assets/578a24d7-944b-4481-90a5-300b4f4857af)
 
 ## Sign-Up Screen
