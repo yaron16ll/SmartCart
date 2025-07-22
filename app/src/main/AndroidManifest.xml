@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/smartcart_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/smartcart_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SmartCart"
+        tools:targetApi="31">
+
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".views.activities.OrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.activities.SecondCreateProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.activities.CreateCategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.activities.FirstCreateProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.activities.SecondSignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.activities.HomePageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.activities.AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.activities.ShoppingCartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.activities.FirstSignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.activities.productInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.activities.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

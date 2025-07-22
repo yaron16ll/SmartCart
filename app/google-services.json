@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "969042680856",
+    "firebase_url": "https://smartcart-bf430-default-rtdb.firebaseio.com",
+    "project_id": "smartcart-bf430",
+    "storage_bucket": "smartcart-bf430.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:969042680856:android:8df1d3a77f97ec7cd9376d",
+        "android_client_info": {
+          "package_name": "com.example.smartcart"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDay7IQ4F0Jar4OcOG4j60tSKTiA6-QfQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

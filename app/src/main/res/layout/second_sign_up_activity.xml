@@ -1,0 +1,129 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.smartcart.views.activities.SecondSignUpActivity">
+
+
+    <data>
+        <variable
+            name="user"
+            type="com.example.smartcart.models.User" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/login">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="120dp"
+            android:text="Sign Up"
+            android:textColor="@color/white"
+            android:textSize="60sp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="230dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/userFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="100dp"
+                android:hint="First Name"
+                android:inputType="text"
+                android:text="@={user.firstName}" />
+
+            <TextView
+                android:id="@+id/userFirstNameErrorMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please write first name (only letters)"
+                android:textColor="#FF1744"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/userLastName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:hint="Last Name"
+                android:inputType="text"
+                android:text="@={user.lastName}" />
+
+            <TextView
+                android:id="@+id/userLastNameErrorMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please write last name (only letters)"
+                android:textColor="#FF1744"
+                android:visibility="invisible" />
+
+            <Spinner
+                android:id="@+id/citylist"
+                android:layout_width="359dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/citylistErrorMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please select a country"
+                android:textColor="#FF1744"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/street"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:hint="Street Name"
+                android:inputType="text"
+                android:text="@={user.street}" />
+
+            <TextView
+                android:id="@+id/streetErrorMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please enter in format: Name No"
+                android:textColor="#FF1744"
+                android:textSize="12sp"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/signUpBtn"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="60dp"
+                android:backgroundTint="@color/black"
+                android:enabled="false"
+                android:padding="12dp"
+                android:text="Sign Up"
+                android:textColor="@color/white" />
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

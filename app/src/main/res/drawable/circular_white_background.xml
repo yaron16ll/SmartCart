@@ -1,0 +1,13 @@
+<!-- res/drawable/circular_white_background.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/white"/>
+        </shape>
+    </item>
+    <item>
+        <bitmap
+            android:src="@drawable/order_back"
+            android:gravity="center"/>
+    </item>
+</layer-list>

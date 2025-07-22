@@ -1,0 +1,107 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.smartcart.views.activities.FirstSignUpActivity">
+
+
+    <data>
+        <variable
+            name="user"
+            type="com.example.smartcart.models.User" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/login">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:layout_marginStart="120dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:text="Sign Up"
+            android:textColor="@color/white"
+            android:textSize="60sp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="230dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/userID"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@={user.ID}"
+                android:layout_marginTop="160dp"
+                android:hint="ID"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/userIDErrorMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please write 9-digit ID"
+                android:textColor="#FF1744"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@={user.username}"
+                android:layout_marginTop="50dp"
+                android:hint="Username"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/usernameErrorMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please write 5-length username"
+                android:textColor="#FF1744"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/passwordTextView"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:text="@={user.password}"
+
+                android:hint="Password"
+                android:inputType="textPassword" />
+
+            <TextView
+                android:id="@+id/passwordErrorMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please enter 1 uppercase letter, 5 lowercase letters, and 3 digits"
+                android:textColor="#FF1744"
+                android:textSize="12sp"
+                android:visibility="invisible" />
+
+
+
+
+            <Button
+                android:id="@+id/moveBtn"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="60dp"
+                android:backgroundTint="@color/black"
+                android:enabled="false"
+                android:padding="12dp"
+                android:text="Next"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

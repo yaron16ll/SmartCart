@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">SmartCart</string>
+    <string-array name="citylist">
+        <item>Select a city</item> <!-- Hint item -->
+        <item>Umm al-Fahm</item>
+        <item>Eilat</item>
+        <item>Ariel</item>
+        <item>Ashdod</item>
+        <item>Ashkelon</item>
+        <item>Baqa al-Gharbiyye</item>
+        <item>Beit Shean</item>
+        <item>Beit Shemesh</item>
+        <item>Bnei Brak</item>
+        <item>Bat Yam</item>
+        <item>Givat Shmuel</item>
+        <item>Givatayim</item>
+        <item>Dimona</item>
+        <item>Hod HaSharon</item>
+        <item>Herzliya</item>
+        <item>Hadera</item>
+        <item>Haifa</item>
+        <item>Harish</item>
+        <item>Tiberias</item>
+        <item>Tayibe</item>
+        <item>Tira</item>
+        <item>Tirat Carmel</item>
+        <item>Yavne</item>
+        <item>Yehud-Monosson</item>
+        <item>Yokneam Illit</item>
+        <item>Yeruham</item>
+        <item>Jerusalem</item>
+        <item>Kfar Saba</item>
+        <item>Kfar Yona</item>
+        <item>Kafr Qasim</item>
+        <item>Karmiel</item>
+        <item>Lod</item>
+        <item>Migdal HaEmek</item>
+        <item>Modiin-Maccabim-Reut</item>
+        <item>Modiin Illit</item>
+        <item>Maale Adumim</item>
+        <item>Maalot-Tarshiha</item>
+        <item>Nahariya</item>
+        <item>Nof HaGalil</item>
+        <item>Nazareth</item>
+        <item>Nesher</item>
+        <item>Netivot</item>
+        <item>Netanya</item>
+        <item>Sakhnin</item>
+        <item>Acre</item>
+        <item>Afula</item>
+        <item>Arad</item>
+        <item>Petah Tikva</item>
+        <item>Safed</item>
+        <item>Qalansawe</item>
+        <item>Katzrin</item>
+        <item>Kiryat Ono</item>
+        <item>Kiryat Ata</item>
+        <item>Kiryat Bialik</item>
+        <item>Kiryat Gat</item>
+        <item>Kiryat Yam</item>
+        <item>Kiryat Motzkin</item>
+        <item>Kiryat Malakhi</item>
+        <item>Kiryat Shmona</item>
+        <item>Rosh HaAyin</item>
+        <item>Rishon LeZion</item>
+        <item>Rahat</item>
+        <item>Ramla</item>
+        <item>Ramat Gan</item>
+        <item>Ramat HaSharon</item>
+        <item>Raanana</item>
+        <item>Sderot</item>
+        <item>Shefa-Amr</item>
+        <item>Tel Aviv-Yafo</item>
+    </string-array>
+</resources>
