@@ -8,7 +8,7 @@ The Android-based application has a frontend on **Android Studio** and a backend
 The backend includes components like the **Firebase real-time database** for storing and manipulating data, and **Firebase Storage** for storing images.
 
 
-The last component is a **collaborative filtering**- based recommendation system for customers' recommendations of products on the **Google Cloud**.\
+The last component is a **collaborative filtering** algorithm-based recommendation system for customers' recommendations of products on the **Google Cloud**.\
 
 [Uploading MOBILE.pptx…]()
 
