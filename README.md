@@ -11,6 +11,8 @@ The backend includes components like the **Firebase real-time database** for sto
 The last component is a **collaborative filtering** algorithm-based recommendation system for customers' recommendations of products on the **Google Cloud**.
 
 
+[docs/MOBILE.pptx](docs/MOBILE.pptx)
+
 
 
 <h1><u>Application Screens</u></h1>
