@@ -10,9 +10,10 @@ The backend includes components like the **Firebase real-time database** for sto
 
 The last component is a **collaborative filtering** algorithm-based recommendation system for customers' recommendations of products on the **Google Cloud**.
 
+[Project Presentation](https://github.com/user-attachments/files/21995432/MOBILE.pptx)
+
 <img width="213" height="189" alt="Image" src="https://github.com/user-attachments/assets/defd3889-a329-4eaf-aca3-0d0a8bda8ff6" />
 
-[Project Presentation](https://github.com/user-attachments/files/21995432/MOBILE.pptx)
 
 
 
