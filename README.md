@@ -1,3 +1,5 @@
+# SmartCart
+
 **SmartCart** is a mobile application for buying and selling grocery products.
 
 Perfect for those who love shopping.
